@@ -43,7 +43,7 @@ def get_movie_by_title():
     result = table.scan(FilterExpression=Key("Title").eq(title))
     
     # Print pulled results
-    for ent in result:
+    for ent in result.get("Items", []):
         print_movie(ent)
 
 
