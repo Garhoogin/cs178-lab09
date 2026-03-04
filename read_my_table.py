@@ -21,7 +21,7 @@ def get_table():
 def print_song(song):
     """Print a single song's details in a readable format."""
     title = song.get("Title", "Unknown Title")
-    artist = song.get("Year", "Unknown Year")
+    artist = song.get("Artist", "Unknown Artist")
     length = song.get("Length", 0)
     
     print(f"  Title  : {title}")
