@@ -51,7 +51,7 @@ def print_all_songs():
 
 def main():
     print("===== Reading from DynamoDB =====\n")
-    get_song_by_title()
+    print_all_songs()
 
 
 if __name__ == "__main__":
