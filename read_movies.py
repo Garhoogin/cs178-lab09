@@ -27,10 +27,12 @@ def print_movie(movie):
     ratings = movie.get("Ratings", {})
     #rating_str = ", ".join(f"{k}: {v}" for k, v in ratings.items()) if ratings else "No ratings"
     rating_str = ", ".join(f"{v}" for v in ratings) if ratings else "No ratings"
+    genre      = movie.get("Genre", "Unknown")
     
     print(f"  Title : {title}")
     print(f"  Year  : {year}")
     print(f"  Ratings: {rating_str}")
+    print(f"  Genre  : {genre}")
     print()
 
 
